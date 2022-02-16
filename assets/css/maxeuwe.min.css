@@ -7752,11 +7752,16 @@ img.mfp-img {
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item {
     margin-bottom: 20px;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
     font-size: 28px;
     transform: translateY(-100%);
     transition: all 0.3s ease-in-out 0.3s;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link.active {
     transform: translateY(0%);
@@ -8221,7 +8226,7 @@ img.mfp-img {
     letter-spacing: 0.0411111111vw;
   }
 }
-#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link::before {
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link::after {
   content: "";
   background: #000000;
   width: 0;
@@ -8231,7 +8236,7 @@ img.mfp-img {
   left: 0;
   transition: all 0.3s linear;
 }
-#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link.active::before {
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link.current::after {
   width: 100%;
 }
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest {
@@ -8255,11 +8260,11 @@ img.mfp-img {
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link:hover a {
   color: #fff;
 }
-#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.active {
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.current {
   background: #000000;
   color: #fff;
 }
-#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.active::before {
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.current::after {
   width: 0;
 }
 
@@ -25702,11 +25707,16 @@ https://flickity.metafizzy.co
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item {
     margin-bottom: 20px;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
     font-size: 28px;
     transform: translateY(-100%);
     transition: all 0.3s ease-in-out 0.3s;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link.active {
     transform: translateY(0%);

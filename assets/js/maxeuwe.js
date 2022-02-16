@@ -229,8 +229,8 @@ $(window).scroll(function(){
         console.log(position,target);
         if(position>=target - 300){
             //remove active from all anchor and add it to the clicked anchor
-            $('#main-menu li a[href^="#"]').removeClass("active")
-            $(this).addClass('active');
+            $('#main-menu li a[href^="#"]').removeClass("current")
+            $(this).addClass('current');
         }
     })
 })

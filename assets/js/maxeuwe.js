@@ -206,10 +206,8 @@ $('.building_list').slick({
 });
 
 
-// Click event
+// Highlight menu if scroll by ID
 let offset = 0;
-
-
 //check the pages when scroll event occurs
 $(window).scroll(function(){
     // Get the current vertical position of the scroll bar

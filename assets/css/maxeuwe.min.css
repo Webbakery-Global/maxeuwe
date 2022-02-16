@@ -8324,7 +8324,7 @@ footer .partner_logo img {
 footer .info {
   border-right: 1px solid #fff;
 }
-footer .info p {
+footer .info p, footer .info a {
   color: #fff;
   font-size: 14px;
   font-weight: 300;
@@ -8332,7 +8332,7 @@ footer .info p {
   line-height: 21px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
-  footer .info p {
+  footer .info p, footer .info a {
     font-size: 0.7777777778vw;
     line-height: 1.1666666667vw;
   }

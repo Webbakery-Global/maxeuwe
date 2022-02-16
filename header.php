@@ -19,9 +19,6 @@ if ( get_field( 'switch' ) === true ) {
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    <script type="text/javascript"
-            src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/8b8989bbb2.js" crossorigin="anonymous"></script>
     <?php wp_head(); ?>
 </head>

@@ -66,7 +66,8 @@ $('a[href*="#"]')
 window.addEventListener('DOMContentLoaded', function () {
     AOS.init({
         once: true,
-        duration: 2000
+        duration: 2000,
+        delay: 200,
     })
 });
 
@@ -216,7 +217,7 @@ $(window).scroll(function(){
         var anchorId = $(this).attr('href');
         var target = $(anchorId).offset().top - offset;
         // check if the document has crossed the page
-        console.log(position,target);
+        // console.log(position,target);
         if(position>=target - 300){
             //remove active from all anchor and add it to the clicked anchor
             $('#main-menu li a[href^="#"]').removeClass("current")

@@ -137,6 +137,12 @@
     </div>
 </div>
 
+<script type="text/javascript"
+        src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery-3.6.0.min.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
 <?php wp_footer(); ?>
 </div>

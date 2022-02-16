@@ -16,7 +16,7 @@ get_header();
     <section id="header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 col_left">
+                <div class="col-sm-12 col-md-4 col-lg-4 col_left" data-aos="fade-down">
                     <svg width="138px" height="305px" viewBox="0 0 138 305" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>e-large</title>
@@ -35,14 +35,15 @@ get_header();
                         <?php echo $titel; ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-8 pr-md-0 col_right">
+                <div class="col-sm-12 col-md-8 col-lg-8 pr-md-0 col_right" data-aos="fade-left">
                     <?= !empty($img = get_field('afbeelding')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'header_img']) : '' ?>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="intro">
+    <section id="intro" data-aos="fade-down">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-12">
@@ -53,7 +54,7 @@ get_header();
         </div>
     </section>
 
-    <section id="relax">
+    <section id="relax" >
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-sm-12 col-lg-4 col_left">
@@ -74,7 +75,7 @@ get_header();
                     </svg>
                     <span class="letter_title"><?php echo __('Relax', 'max'); ?></span>
                 </div>
-                <div class="col-sm-12 col-lg-8 col_right pr-lg-0">
+                <div class="col-sm-12 col-lg-8 col_right pr-lg-0" data-aos="fade-left">
                     <div class="main-carousel">
                         <?php if (have_rows('slider')) : ?>
                             <?php while (have_rows('slider')) :
@@ -251,7 +252,7 @@ get_header();
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-4 appartementen_slider_content">
-                    <div class="content">
+                    <div class="content" data-aos="fade-up">
                         <div class="d-flex align-items-end">
                             <svg width="138px" height="306px" viewBox="0 0 138 306" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -313,10 +314,10 @@ get_header();
     <section id="living">
         <div class="container-big">
             <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-5 col_left">
+                <div class="col-sm-12 col-md-5 col-lg-5 col_left" data-aos="fade-right">
                     <?= !empty($img = get_field('afbeelding_links')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 offset-md-1 offset-lg-3 col_right">
+                <div class="col-sm-12 col-md-6 col-lg-4 offset-md-1 offset-lg-3 col_right" data-aos="fade-left">
                     <?= !empty($img = get_field('afbeelding_rechts')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                     <div class="content">
                         <?php if ($content = get_field('content')) : ?>
@@ -358,7 +359,7 @@ get_header();
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-8 park">
+                <div class="col-sm-12 col-lg-8 park" data-aos="fade-up">
                     <?= !empty($img = get_field('brainpark_afbeelding')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                 </div>
             </div>
@@ -393,7 +394,7 @@ get_header();
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-3 hotspot_overlay_slider">
-                    <div class="letter_block">
+                    <div class="letter_block" data-aos="fade-up">
                         <svg class="letter" viewBox="0 0 138 305" version="1.1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
                             <title>Fill 1</title>
@@ -410,17 +411,17 @@ get_header();
                             </g>
                         </svg>
                         <?php if ($tekst_naar_letter = get_field('tekst_naar_letter')) : ?>
-                            <span class="text"><?php echo $tekst_naar_letter; ?></span>
+                            <span class="text" ><?php echo $tekst_naar_letter; ?></span>
                         <?php endif; ?>
                     </div>
 
-                    <div class="content">
+                    <div class="content" data-aos="fade-up">
                         <?php if ($h_content = get_field('h_content')) : ?>
                             <?php echo $h_content; ?>
                         <?php endif; ?>
                     </div>
 
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <a class="button_prev_hotspot">
                             <svg width="26px" height="14px" viewBox="0 0 26 14" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -478,7 +479,7 @@ get_header();
     <section id="interesse" style="background-image:url(<?php echo esc_url(get_field('bg_image')); ?>)">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-9 col_left">
+                <div class="col-sm-12 col-lg-9 col_left" data-aos="fade-up">
                     <div class="content">
                         <?php if ($i_title = get_field('i_title')) : ?>
                             <h2><?php echo esc_html($i_title); ?></h2>
@@ -500,7 +501,7 @@ get_header();
                     endif;
                     ?>
                 </div>
-                <div class="col-sm-12 col-lg-3 d-none d-lg-flex col_right">
+                <div class="col-sm-12 col-lg-3 d-none d-lg-flex col_right" data-aos="fade-down">
                     <div class="letter_block">
                         <svg class="letter" width="138px" height="307px" viewBox="0 0 138 307" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

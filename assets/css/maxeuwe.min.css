@@ -7936,6 +7936,11 @@ img.mfp-img {
   footer .menu {
     border: none;
   }
+
+  .modal {
+    max-height: 500px;
+    width: 80vw;
+  }
 }
 @media only screen and (max-width: 650px) {
   #wrapper-navbar {
@@ -25891,6 +25896,11 @@ https://flickity.metafizzy.co
   }
   footer .menu {
     border: none;
+  }
+
+  .modal {
+    max-height: 500px;
+    width: 80vw;
   }
 }
 @media only screen and (max-width: 650px) {

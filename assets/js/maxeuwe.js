@@ -2,20 +2,11 @@ import AOS from 'aos';
 
 $(document).ready(function () {
 
-    $(".menu_button").click(function () {
-        $(".open_icon").toggleClass("hide");
-        $(".close, .close_icon").toggleClass("hide");
-        $(".menu_button, #wrapper-navbar").toggleClass("open");
-        $(".nav-link, .dropdown-item, .menu_info").toggleClass("fade_in");
-        $(".top_menu").toggleClass("black");
-    });
-
-    $(".nav-link, .dropdown-item, .navbar-brand, .menu_button.open").click(function () {
-        $(".menu_button").addClass("menu_closed").removeClass("menu_open");
-        $(".open_icon").removeClass("hide");
-        $(".close, .close_icon").addClass("hide");
-        $(".menu_button, #wrapper-navbar, .top_menu").removeClass("open");
-        $(".top_menu").removeClass("black");
+    $(".hamburger, #main-menu li .nav-link").click(function () {
+        $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").toggleClass("open");
+        $("#navbarNavDropdown, .nav-link").toggleClass("active");
+        $("body, html").toggleClass("no-scroll");
+        $("#wrapper-navbar").toggleClass("sticky");
     });
 
     $(".privacy_modal_link").click(function () {
@@ -208,6 +199,7 @@ $hotspotSlider.slick({
     arrows: true,
     prevArrow: $('.button_prev_hotspot'),
     nextArrow: $('.button_next_hotspot'),
+
 });
 
 

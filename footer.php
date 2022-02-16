@@ -14,7 +14,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-2 logo">
+            <div class="col-sm-12 col-md-6 col-lg-2 logo">
                 <svg width="251px" height="156px" viewBox="0 0 251 156" version="1.1"
                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -56,15 +56,15 @@
                     </g>
                 </svg>
             </div>
-            <div class="col-sm-12 col-lg-2 partner_logo">
+            <div class="col-sm-12 col-md-6 col-lg-2 partner_logo">
                 <?= !empty($img = get_field('logo')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
             </div>
-            <div class="col-sm-12 col-lg-3 info">
+            <div class="col-sm-12 col-md-6 col-lg-3 info">
                 <?php if ($footer_info = get_field('footer_info')) : ?>
                     <?php echo $footer_info; ?>
                 <?php endif; ?>
             </div>
-            <div class="col-sm-12 col-lg-3 menu">
+            <div class="col-sm-12 col-md-6 col-lg-3 menu">
                 <?php
                 wp_nav_menu(
                     array(
@@ -79,7 +79,7 @@
                 );
                 ?>
             </div>
-            <div class="col-sm-12 col-lg-2 socials">
+            <div class="col-sm-12 col-md-2 col-lg-2 socials">
                 <div class="block">
                     <?php if (have_rows('socials')) : ?>
                         <?php while (have_rows('socials')) :

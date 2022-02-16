@@ -16,7 +16,7 @@ get_header();
     <section id="header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-4 col_left">
+                <div class="col-sm-12 col-md-4 col-lg-4 col_left">
                     <svg width="138px" height="305px" viewBox="0 0 138 305" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>e-large</title>
@@ -35,7 +35,7 @@ get_header();
                         <?php echo $titel; ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-sm-12 col-lg-8 pr-lg-0 col_right">
+                <div class="col-sm-12 col-md-8 col-lg-8 pr-md-0 col_right">
                     <?= !empty($img = get_field('afbeelding')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'header_img']) : '' ?>
                 </div>
             </div>
@@ -81,10 +81,10 @@ get_header();
                                 the_row(); ?>
                                 <div class="carousel-cell">
                                     <div class="row">
-                                        <div class="col-sm-12 col-lg-6 px-lg-0">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 px-lg-0">
                                             <?= !empty($img = get_sub_field('afbeelding')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'slide_img']) : '' ?>
                                         </div>
-                                        <div class="col-sm-12 col-lg-6 content pr-lg-0">
+                                        <div class="col-sm-12 col-md-6 col-lg-6 content pr-lg-0">
                                             <?php if ($content = get_sub_field('content')) : ?>
                                                 <?php echo $content; ?>
                                             <?php endif; ?>
@@ -95,13 +95,13 @@ get_header();
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4 offset-lg-4 slide_text">
+                <div class="col-sm-12 col-md-8 col-lg-4 offset-lg-4 slide_text">
                     <?php if ($relax_content = get_field('relax_content')) : ?>
                         <?php echo $relax_content; ?>
                     <?php endif; ?>
                 </div>
 
-                <div class="col-sm-12 col-lg-4 slider_info">
+                <div class="col-sm-12 col-md-4 col-lg-4 slider_info">
                     <div class="info">
                         <a class="button--prev">
                             <svg width="26px" height="14px" viewBox="0 0 26 14" version="1.1"
@@ -160,7 +160,7 @@ get_header();
     <section id="appartments">
         <div class="container-big">
             <div class="row">
-                <div class="col-sm-12 col-lg-2 slider_info px-0">
+                <div class="col-sm-12 col-md-3 col-lg-2 slider_info px-0">
                     <div class="content">
                         <div class="appartementen_slider_names">
                             <?php
@@ -231,7 +231,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 px-0">
+                <div class="col-sm-12 col-md-9 col-lg-6 px-0">
                     <div class="appartments_slider">
                         <?php
                         $args = array(
@@ -313,10 +313,10 @@ get_header();
     <section id="living">
         <div class="container-big">
             <div class="row">
-                <div class="col-sm-12 col-lg-5 col_left">
+                <div class="col-sm-12 col-md-5 col-lg-5 col_left">
                     <?= !empty($img = get_field('afbeelding_links')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                 </div>
-                <div class="col-sm-12 col-lg-4 offset-lg-3 col_right">
+                <div class="col-sm-12 col-md-6 col-lg-4 offset-md-1 offset-lg-3 col_right">
                     <?= !empty($img = get_field('afbeelding_rechts')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                     <div class="content">
                         <?php if ($content = get_field('content')) : ?>
@@ -368,7 +368,7 @@ get_header();
     <section id="hotspot">
         <div class="container-big">
             <div class="row">
-                <div class="col-sm-12 col-lg-8">
+                <div class="col-sm-12 col-md-8 col-lg-8">
                     <div class="hotspot_slider">
                         <?php if (have_rows('hotspot_slider')) : ?>
                             <?php while (have_rows('hotspot_slider')) :
@@ -392,7 +392,7 @@ get_header();
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-3 hotspot_overlay_slider">
+                <div class="col-sm-12 col-md-4 col-lg-3 hotspot_overlay_slider">
                     <div class="letter_block">
                         <svg class="letter" viewBox="0 0 138 305" version="1.1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -500,7 +500,7 @@ get_header();
                     endif;
                     ?>
                 </div>
-                <div class="col-sm-12 col-lg-3 col_right">
+                <div class="col-sm-12 col-lg-3 d-none d-lg-block col_right">
                     <div class="letter_block">
                         <svg class="letter" width="138px" height="307px" viewBox="0 0 138 307" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

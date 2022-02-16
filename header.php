@@ -83,8 +83,12 @@ if ( get_field( 'switch' ) === true ) {
 
                         </a>
                     </div>
-                    <div class="col-8 pr-lg-0">
-
+                    <div class="col-8 col_right pr-lg-0">
+                        <div class="hamburger d-lg-none">
+                            <div class="hamburgerTop"></div>
+                            <div class="hamburgerMiddle"></div>
+                            <div class="hamburgerBottom"></div>
+                        </div>
 
                         <!-- The WordPress Menu goes here -->
                         <?php

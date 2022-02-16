@@ -7942,6 +7942,9 @@ img.mfp-img {
     transition: left 0.3s ease-in-out, height 0.3s ease-in-out, background 0.05s ease-in-out;
     padding: 15px;
   }
+  #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
+    font-size: 18px;
+  }
   #wrapper-navbar.sticky #main-nav .container .navbar-brand {
     left: 0;
   }
@@ -25847,6 +25850,9 @@ https://flickity.metafizzy.co
     background: #fff;
     transition: left 0.3s ease-in-out, height 0.3s ease-in-out, background 0.05s ease-in-out;
     padding: 15px;
+  }
+  #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
+    font-size: 18px;
   }
   #wrapper-navbar.sticky #main-nav .container .navbar-brand {
     left: 0;

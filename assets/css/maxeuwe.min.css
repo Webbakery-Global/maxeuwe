@@ -7741,6 +7741,7 @@ img.mfp-img {
     transform: translateX(200%);
     display: flex;
     align-items: center;
+    overflow: hidden;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu {
     width: -webkit-max-content;
@@ -25696,6 +25697,7 @@ https://flickity.metafizzy.co
     transform: translateX(200%);
     display: flex;
     align-items: center;
+    overflow: hidden;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu {
     width: -webkit-max-content;

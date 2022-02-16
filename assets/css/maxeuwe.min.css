@@ -6072,6 +6072,10 @@ body.fade_out::before {
   visibility: visible;
 }
 
+.slick-arrow svg {
+  transition: all 0.3s ease-in-out;
+}
+
 .slick-disabled svg #ME-landing-Desktop-light {
   stroke: rgba(0, 0, 0, 0.18);
 }
@@ -6689,14 +6693,9 @@ body.fade_out::before {
   height: auto;
 }
 #brainpark .content {
-  height: 425px;
+  margin-top: 25px;
   max-width: 290px;
   display: flex;
-}
-@media (max-width: 1799px) and (min-width: 1024px) {
-  #brainpark .content {
-    height: 23.6111111111vw;
-  }
 }
 #brainpark .content p {
   align-self: flex-end;
@@ -7701,6 +7700,11 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
+@media only screen and (min-width: 1025px) {
+  #wrapper-navbar.sticky {
+    padding: 10px 0;
+  }
+}
 @media only screen and (max-width: 1025px) {
   #wrapper-navbar {
     padding: 10px 0;
@@ -7714,7 +7718,6 @@ img.mfp-img {
     width: auto;
   }
   #wrapper-navbar #main-nav .container .navbar-brand {
-    position: relative;
     height: 50px;
   }
   #wrapper-navbar #main-nav .container .navbar-brand svg {
@@ -7934,13 +7937,16 @@ img.mfp-img {
   }
   #wrapper-navbar #main-nav .container .navbar-brand {
     top: 0;
-    left: -15px;
+    left: 0;
     transition: all 0.3s ease-in-out;
+    position: relative;
   }
   #wrapper-navbar #main-nav .container .navbar-brand svg {
     background: #fff;
-    transition: left 0.3s ease-in-out, height 0.3s ease-in-out, background 0.05s ease-in-out;
+    transition: all 0.2s ease-in-out;
     padding: 15px;
+    height: auto;
+    width: 200px;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
     font-size: 18px;
@@ -7950,6 +7956,8 @@ img.mfp-img {
   }
   #wrapper-navbar.sticky #main-nav .container .navbar-brand svg {
     padding: 0;
+    width: 70px;
+    height: auto;
   }
 
   #header {
@@ -8037,12 +8045,17 @@ img.mfp-img {
     height: 300px;
     margin-bottom: 50px;
   }
+  #living .col_right {
+    display: grid;
+  }
   #living .col_right img {
     height: 300px;
     width: 100%;
   }
   #living .col_right .content {
     padding: 0 15px;
+    margin: 0 0 30px 0;
+    order: -1;
   }
 
   #brainpark .letter_block .letter {
@@ -8125,6 +8138,7 @@ img.mfp-img {
   transition: all 0.3s ease-in-out;
   background: transparent;
   display: block;
+  box-shadow: rgba(99, 99, 99, 0) 0 2px 8px 0;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   #wrapper-navbar {
@@ -8133,6 +8147,7 @@ img.mfp-img {
 }
 #wrapper-navbar.sticky {
   background: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
 #wrapper-navbar.sticky #main-nav .container .navbar-brand {
   top: 0;
@@ -8192,6 +8207,7 @@ img.mfp-img {
   margin-right: 0;
 }
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
+  position: relative;
   color: #000000;
   font-family: "Dince", san-serif;
   font-weight: 600;
@@ -8205,22 +8221,46 @@ img.mfp-img {
     letter-spacing: 0.0411111111vw;
   }
 }
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link::before {
+  content: "";
+  background: #000000;
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s linear;
+}
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link.active::before {
+  width: 100%;
+}
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest {
+  display: flex;
+  align-items: center;
+}
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link {
   border: 1px solid #000000;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   padding: 5px 25px;
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
-  #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest {
+  #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link {
     padding: 0.2777777778vw 1.3888888889vw;
   }
 }
-#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest:hover {
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link:hover {
   background: #000000;
 }
-#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest:hover a {
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link:hover a {
   color: #fff;
+}
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.active {
+  background: #000000;
+  color: #fff;
+}
+#wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.active::before {
+  width: 0;
 }
 
 .header_green #wrapper-navbar {
@@ -25610,6 +25650,11 @@ https://flickity.metafizzy.co
   font-weight: 900;
 }
 
+@media only screen and (min-width: 1025px) {
+  #wrapper-navbar.sticky {
+    padding: 10px 0;
+  }
+}
 @media only screen and (max-width: 1025px) {
   #wrapper-navbar {
     padding: 10px 0;
@@ -25623,7 +25668,6 @@ https://flickity.metafizzy.co
     width: auto;
   }
   #wrapper-navbar #main-nav .container .navbar-brand {
-    position: relative;
     height: 50px;
   }
   #wrapper-navbar #main-nav .container .navbar-brand svg {
@@ -25843,13 +25887,16 @@ https://flickity.metafizzy.co
   }
   #wrapper-navbar #main-nav .container .navbar-brand {
     top: 0;
-    left: -15px;
+    left: 0;
     transition: all 0.3s ease-in-out;
+    position: relative;
   }
   #wrapper-navbar #main-nav .container .navbar-brand svg {
     background: #fff;
-    transition: left 0.3s ease-in-out, height 0.3s ease-in-out, background 0.05s ease-in-out;
+    transition: all 0.2s ease-in-out;
     padding: 15px;
+    height: auto;
+    width: 200px;
   }
   #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
     font-size: 18px;
@@ -25859,6 +25906,8 @@ https://flickity.metafizzy.co
   }
   #wrapper-navbar.sticky #main-nav .container .navbar-brand svg {
     padding: 0;
+    width: 70px;
+    height: auto;
   }
 
   #header {
@@ -25946,12 +25995,17 @@ https://flickity.metafizzy.co
     height: 300px;
     margin-bottom: 50px;
   }
+  #living .col_right {
+    display: grid;
+  }
   #living .col_right img {
     height: 300px;
     width: 100%;
   }
   #living .col_right .content {
     padding: 0 15px;
+    margin: 0 0 30px 0;
+    order: -1;
   }
 
   #brainpark .letter_block .letter {

@@ -2,12 +2,20 @@ import AOS from 'aos';
 
 $(document).ready(function () {
 
-    $(".hamburger, #main-menu li .nav-link").click(function () {
+    $(".hamburger").click(function () {
         $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").toggleClass("open");
         $("#navbarNavDropdown, .nav-link").toggleClass("active");
         $("body, html").toggleClass("no-scroll");
         $("#wrapper-navbar").toggleClass("sticky");
     });
+
+    $("#main-menu li .nav-link").click(function () {
+        $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").toggleClass("open");
+        $("body, html").toggleClass("no-scroll");
+        $("#wrapper-navbar").toggleClass("sticky");
+    });
+
+
 
     $(".privacy_modal_link").click(function () {
         $(".privacy_modal").addClass("active");
@@ -28,8 +36,9 @@ $(document).ready(function () {
     document.onkeydown = function (evt) {
         evt = evt || window.event;
         if (evt.keyCode == 27) {
-            $(".modal").removeClass("active");
-            $("menu_container").removeClass("fade_out");
+            $(".modal, #navbarNavDropdown, .nav-link").removeClass("active");
+            $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").removeClass("open");
+            $("body").removeClass("fade_out");
         }
     };
 
@@ -62,18 +71,6 @@ $('a[href*="#"]')
         }
     });
 
-window.onload = function () {
-    var current = location.pathname;
-    $('#nav li a').each(function () {
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if ($this.attr('href').indexOf(current) !== -1) {
-            $this.addClass('active');
-        }
-    })
-};
-
-
 window.addEventListener('DOMContentLoaded', function () {
     AOS.init({
         once: true,
@@ -98,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function myFunction() {
         let scrollPosition = Math.round(window.scrollY);
 
-        if (scrollPosition > 100) {
+        if (scrollPosition > 0) {
             navbar.classList.add("sticky");
         } else {
             navbar.classList.remove("sticky");
@@ -109,53 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//
-//
-// jQuery(document).ready(function () {
-//     function resizeForm() {
-//         let width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
-//         if (width < 1024) {
-//             $(document).ready(function () {
-//                 function portfolioSlider() {
-//                     $('.portfolio_slider').slick({
-//                         infinite: true,
-//                         autoplay: true,
-//                         autoplaySpeed: 5000,
-//                         pauseOnHover: false,
-//                         slidesToShow: 1,
-//                         slidesToScroll: 1,
-//                         dots: true,
-//                         arrows: true,
-//                         prevArrow: $('.prev_portfolio_item'),
-//                         nextArrow: $('.next_portfolio_item'),
-//                     });
-//                 }
-//                 portfolioSlider();
-//             });
-//
-//         } else {
-//
-//         }
-//     }
-//
-//     window.onresize = resizeForm;
-//     resizeForm();
-// });
-//
-
-
-// $('.main-carousel').slick({
-//     infinite: true,
-//     autoplay: false,
-//     autoplaySpeed: 5000,
-//     pauseOnHover: false,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     dots: false,
-//     arrows: true,
-//     prevArrow: $('.button--prev'),
-//     nextArrow: $('.button--next'),
-// });
 
 var $status = $('.carousel-status');
 var $slickElement = $('.main-carousel');
@@ -264,61 +214,28 @@ $('.building_list').slick({
 });
 
 
-//
-// let $carousel = $('.main-carousel').flickity({
-//     // options
-//     pageDots: false,
-//     prevNextButtons: true,
-//     cellAlign: 'right',
-//     initialIndex: -1,
-// });
-//
-// $carousel.flickity( 'next', 'previous' )
-//
-// $('.button--next').on( 'click', function() {
-//     $carousel.flickity('next');
-// });
-// $('.button--prev').on( 'click', function() {
-//     $carousel.flickity('previous');
-// });
-//
-// let flkty = new Flickity('.main-carousel');
-// let carouselStatus = document.querySelector('.carousel-status');
-//
-// function updateStatus() {
-//     let slideNumber = flkty.selectedIndex + 1;
-//     carouselStatus.textContent = slideNumber + '/' + flkty.slides.length;
-// }
-// updateStatus();
-//
-// flkty.on( 'select', updateStatus );
-//
-//
-// let $hotspotSlider = $('.hotspot_slider').flickity({
-//     // options
-//     contain: true,
-//     pageDots: false,
-//     prevNextButtons: false,
-//     fade: true,
-//     initialIndex: -1,
-// });
-//
-// $hotspotSlider.flickity( 'next', 'previous' )
-//
-// $('.button_next_hotspot').on( 'click', function() {
-//     $hotspotSlider.flickity('next');
-// });
-// $('.button_prev_hotspot').on( 'click', function() {
-//     $hotspotSlider.flickity('previous');
-// });
-//
-// let flktyHotspot = new Flickity('.hotspot_slider');
-// let carouselStatusHotspot = document.querySelector('.hotspot_slide');
-//
-// function updateHotspotStatus() {
-//     let slideNumberHotspot = flktyHotspot.selectedIndex + 1;
-//     carouselStatusHotspot.textContent = slideNumberHotspot + '/' + flktyHotspot.slides.length;
-// }
-// updateHotspotStatus();
-//
-// flktyHotspot.on( 'select', updateHotspotStatus );
+// Click event
+let offset = 0;
+
+
+//check the pages when scroll event occurs
+$(window).scroll(function(){
+    // Get the current vertical position of the scroll bar
+    let position = $(this).scrollTop();
+    $('#main-menu li a[href^="#"]').each(function(){
+        var anchorId = $(this).attr('href');
+        var target = $(anchorId).offset().top - offset;
+        // check if the document has crossed the page
+        console.log(position,target);
+        if(position>=target - 300){
+            //remove active from all anchor and add it to the clicked anchor
+            $('#main-menu li a[href^="#"]').removeClass("active")
+            $(this).addClass('active');
+        }
+    })
+})
+$(function(){
+    //set our scroll state after dom ready
+    $(window).scroll();
+})
+

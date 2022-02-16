@@ -500,7 +500,7 @@ get_header();
                     endif;
                     ?>
                 </div>
-                <div class="col-sm-12 col-lg-3 d-none d-lg-block col_right">
+                <div class="col-sm-12 col-lg-3 d-none d-lg-flex col_right">
                     <div class="letter_block">
                         <svg class="letter" width="138px" height="307px" viewBox="0 0 138 307" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

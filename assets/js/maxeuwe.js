@@ -2,21 +2,12 @@ import AOS from 'aos';
 
 $(document).ready(function () {
 
-    $(".hamburger").click(function () {
+    $(".hamburger, #main-menu li .nav-link").click(function () {
         $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").toggleClass("open");
         $("#navbarNavDropdown, .nav-link").toggleClass("active");
         $("body, html").toggleClass("no-scroll");
         $("#wrapper-navbar").toggleClass("sticky");
     });
-
-    $("#main-menu li .nav-link").click(function () {
-        $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").toggleClass("open");
-        $("body, html").toggleClass("no-scroll");
-        $("#wrapper-navbar").toggleClass("sticky");
-        $("#navbarNavDropdown").toggleClass("active");
-    });
-
-
 
     $(".privacy_modal_link").click(function () {
         $(".privacy_modal").addClass("active");

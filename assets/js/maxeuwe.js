@@ -13,6 +13,7 @@ $(document).ready(function () {
         $(".hamburgerTop, .hamburgerMiddle, .hamburgerBottom").toggleClass("open");
         $("body, html").toggleClass("no-scroll");
         $("#wrapper-navbar").toggleClass("sticky");
+        $("#navbarNavDropdown").toggleClass("active");
     });
 
 

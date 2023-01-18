@@ -8821,7 +8821,7 @@ img.mfp-img {
   position: relative;
   color: #000000;
   font-family: "Dince", san-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.74px;
   font-size: 13px;
@@ -8864,7 +8864,7 @@ img.mfp-img {
   background: #000000;
 }
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link:hover a {
-  color: #fff;
+  color: #fff!important;
 }
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link.current {
   background: #000000;

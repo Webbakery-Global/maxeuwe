@@ -126,7 +126,7 @@
             </div>
             <div class="col-12 col-md-3">
                 <a class="text-black" href="https://www.fpw.nl" target="_blank">DESIGN BY FPW</a>
-                <a class="text-black" href="https://www.webbakery.nl" target="_blank">MADE BY FPW</a>
+                <a class="text-black ml-md-2" href="https://www.webbakery.nl" target="_blank">MADE BY THE WEB BAKERY</a>
             </div>
         </div>
     </div>

@@ -1059,7 +1059,6 @@ h2, .h2 {
     font-size: 44px;
     letter-spacing: 0;
     line-height: 40px;
-
 }
 
 @media (max-width: 1799px) and (min-width: 1024px) {
@@ -7635,6 +7634,7 @@ body.fade_out::before {
     letter-spacing: -0.5px;
     line-height: 44px;
     margin-bottom: 28px;
+    font-family: "Abel", sans-serif;
 }
 
 @media (max-width: 1799px) and (min-width: 1024px) {
@@ -7870,6 +7870,7 @@ body.fade_out::before {
     letter-spacing: -0.31px;
     line-height: 26px;
     margin-bottom: 55px;
+    font-family: "Helvetica", sans-serif;
 }
 
 @media (max-width: 1799px) and (min-width: 1024px) {
@@ -9138,6 +9139,7 @@ img.mfp-img {
     #intro .content {
         font-size: 34px;
         line-height: 44px;
+        font-family: "Abel", sans-serif;
     }
 
     #relax .col_left {

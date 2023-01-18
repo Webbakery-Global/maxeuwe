@@ -26503,7 +26503,7 @@ https://flickity.metafizzy.co
     width: 80vw;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 768px) {
   #wrapper-navbar {
     padding: 10px 15px;
   }

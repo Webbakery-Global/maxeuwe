@@ -118,7 +118,7 @@
         </div>
     </div>
 </div>
-<div class="bottom_bar">
+<div class="bottom_bar my-2">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5 offset-md-4">

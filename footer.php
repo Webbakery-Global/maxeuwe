@@ -121,10 +121,10 @@
 <div class="bottom_bar my-2">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 text-center text-md-left">
                 <span>©MAX EUWE KWARTIER <?php the_date('Y'); ?>, ALL RIGHTS RESERVED</span>
             </div>
-            <div class="col-12 col-md-6 mt-4 mt-md-0">
+            <div class="col-12 col-md-6 mt-4 mt-md-0 text-center text-md-right">
                 <a class="text-black d-block d-md-inline-flex" href="https://www.fpw.nl" target="_blank">DESIGN BY FPW</a>
                 <a class="text-black d-block d-md-inline-flex mt-2 mt-md-0 ml-md-2" href="https://www.webbakery.nl" target="_blank">MADE BY THE WEB BAKERY</a>
             </div>

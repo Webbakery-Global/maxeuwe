@@ -9250,6 +9250,12 @@ img.mfp-img {
         display: block;
     }
 
+    .bottom_bar span, .bottom_bar a {
+        font-family: "Abel", sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+
     footer .logo, footer .partner_logo {
         text-align: center;
         border: none;

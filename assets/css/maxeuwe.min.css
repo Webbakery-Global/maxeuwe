@@ -9284,7 +9284,8 @@ img.mfp-img {
 
     footer .logo svg, footer .logo img, footer .partner_logo svg, footer .partner_logo img {
         max-width: unset;
-        max-height: 100px;
+        max-height: unset;
+        height: auto;
         width: 100%;
         padding: 0;
     }

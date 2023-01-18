@@ -788,6 +788,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   font-weight: 600;
   font-display: swap;
 }
+@font-face {
+  font-family: "Abel";
+  src: url("../fonts/Abel-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
 b, strong {
   font-weight: bold;
 }
@@ -8820,7 +8826,7 @@ img.mfp-img {
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item .nav-link {
   position: relative;
   color: #000000;
-  font-family: "Dince", san-serif;
+  font-family: "Abel", san-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.74px;

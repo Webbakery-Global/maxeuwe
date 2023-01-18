@@ -2204,6 +2204,7 @@ template {
         max-width: 58.33333%;
     }
 
+
     .col-xl-8 {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
@@ -2335,6 +2336,13 @@ template {
 
     .offset-xl-11 {
         margin-left: 91.66667%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .col-xxl-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
     }
 }
 

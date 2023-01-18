@@ -35,7 +35,7 @@ get_header();
                         <?php echo $titel; ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-7 pr-md-0 col_right" data-aos="fade-left">
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-7 pr-md-0 col_right" data-aos="fade-left">
                     <?= !empty($img = get_field('afbeelding')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => 'header_img']) : '' ?>
 
                 </div>

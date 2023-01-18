@@ -314,10 +314,10 @@ get_header();
     <section id="living">
         <div class="container-big">
             <div class="row">
-                <div class="col-sm-12 col-md-5 col-lg-5 col_left" data-aos="fade-right">
+                <div class="col-sm-12 col-md-6 col_left" data-aos="fade-right">
                     <?= !empty($img = get_field('afbeelding_links')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 offset-md-1 offset-lg-3 col_right" data-aos="fade-left">
+                <div class="col-sm-12 col-md-4 offset-lg-2 col_right" data-aos="fade-left">
                     <?= !empty($img = get_field('afbeelding_rechts')) ? wp_get_attachment_image($img['id'], 'full', false, ['class' => '']) : '' ?>
                     <div class="content">
                         <?php if ($content = get_field('content')) : ?>

@@ -484,7 +484,7 @@ get_header();
                         <?php if ($i_title = get_field('i_title')) : ?>
                             <h2><?php echo esc_html($i_title); ?></h2>
                         <?php endif; ?>
-                        <?php if ($I_content = get_field('I_content')) : ?>
+                        <?php if ($I_content = get_field('i_content')) : ?>
                             <p><?php echo $I_content; ?></p>
                         <?php endif; ?>
                     </div>

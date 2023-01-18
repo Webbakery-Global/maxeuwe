@@ -124,9 +124,9 @@
             <div class="col-12 col-md-6">
                 <span>©MAX EUWE KWARTIER <?php the_date('Y'); ?>, ALL RIGHTS RESERVED</span>
             </div>
-            <div class="col-12 col-md-6 offset-md-6 mt-4 mt-md-0">
-                <a class="text-black d-block d-md-flex" href="https://www.fpw.nl" target="_blank">DESIGN BY FPW</a>
-                <a class="text-black d-block d-md-flex mt-2 mt-md-0 ml-md-2" href="https://www.webbakery.nl" target="_blank">MADE BY THE WEB BAKERY</a>
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <a class="text-black d-block d-md-inline-flex" href="https://www.fpw.nl" target="_blank">DESIGN BY FPW</a>
+                <a class="text-black d-block d-md-inline-flex mt-2 mt-md-0 ml-md-2" href="https://www.webbakery.nl" target="_blank">MADE BY THE WEB BAKERY</a>
             </div>
         </div>
     </div>

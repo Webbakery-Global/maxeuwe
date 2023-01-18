@@ -118,6 +118,19 @@
         </div>
     </div>
 </div>
+<div class="bottom_bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-6">
+                <span>©MAX EUWE KWARTIER <?php the_date('Y'); ?>, ALL RIGHTS RESERVED</span>
+            </div>
+            <div class="col-12 col-md-2">
+                <a href="https://www.fpw.nl" target="_blank">DESIGN BY FPW</a>
+                <a href="https://www.webbakery.nl" target="_blank">MADE BY FPW</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal disclaimer_modal fade">
     <div class="modal-dialog modal-lg">

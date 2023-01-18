@@ -7785,7 +7785,7 @@ body.fade_out::before {
     }
 }
 
-#hotspot .hotspot_slider .slide .content p {
+#hotspot .hotspot_slider .slide .content p, #hotspot .hotspot_overlay_slider .content p {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: -0.21px;
@@ -7794,7 +7794,7 @@ body.fade_out::before {
 }
 
 @media (max-width: 1799px) and (min-width: 1024px) {
-    #hotspot .hotspot_slider .slide .content p {
+    #hotspot .hotspot_slider .slide .content p, #hotspot .hotspot_overlay_slider .content p {
         font-size: 0.8333333333vw;
         letter-spacing: -0.0116666667vw;
         line-height: 1.3333333333vw;

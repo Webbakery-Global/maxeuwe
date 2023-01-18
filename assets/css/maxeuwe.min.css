@@ -27396,7 +27396,7 @@ https://flickity.metafizzy.co
     }
 
     footer .logo svg, footer .logo img, footer .partner_logo svg, footer .partner_logo img {
-        max-width: unset;
+        max-width: 200px;
         max-height: unset;
         height: auto;
         width: 100%;

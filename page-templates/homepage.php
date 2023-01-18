@@ -279,7 +279,9 @@ get_header();
                                         'order' => 'DESC',
                                     );
                                     $loop = new WP_Query($args);
-                                    while ($loop->have_posts()) : $loop->the_post(); ?>
+                                    while ($loop->have_posts()) : $loop->the_post();
+
+                                    ?>
                                         <div class="slide_name w-100">
                                             <p><?php the_title(); ?></p>
                                         </div>

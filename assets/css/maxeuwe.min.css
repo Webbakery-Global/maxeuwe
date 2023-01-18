@@ -1012,10 +1012,20 @@ p, li {
     font-family: "Helvetica", san serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 25px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.21px;
+    line-height: 24px;
 }
+@media (max-width: 1799px) and (min-width: 1024px) {
+    p, li {
+        font-size: 0.8333333333vw;
+        letter-spacing: -0.0116666667vw;
+        line-height: 1.3333333333vw;
+    }
+}
+
+
 
 a {
     text-decoration: none;
@@ -9451,6 +9461,7 @@ img.mfp-img {
 
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link:hover {
     background: #000000;
+    color: #fff;
 }
 
 #wrapper-navbar #main-nav .container #navbarNavDropdown #main-menu .menu-item.intrest .nav-link:hover a {

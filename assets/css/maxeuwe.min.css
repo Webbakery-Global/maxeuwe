@@ -811,6 +811,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", sans-serif;
+}
+
 h1, .h1 {
   font-size: 50px;
   letter-spacing: 0;
@@ -833,6 +837,7 @@ h2, .h2 {
   font-size: 44px;
   letter-spacing: 0;
   line-height: 40px;
+
 }
 @media (max-width: 1799px) and (min-width: 1024px) {
   h2, .h2 {
